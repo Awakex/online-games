@@ -1,0 +1,32 @@
+@import "src/styles/vars"
+
+.cardWrapper
+  display: flex
+  flex-direction: column
+  padding: 20px
+  width: 400px
+  height: 200px
+  border-radius: 10px
+  transition: .2s ease
+  border: 2px solid $color-dark-turquoise
+  box-shadow: 0 0 5px $color-dark-turquoise
+  &:hover
+    box-shadow: 0 0 10px $color-dark-turquoise
+
+.card
+  flex: 1
+
+.title
+  color: $color-turquoise
+
+.description
+  color: $color-light-grey
+
+.footer
+  display: flex
+  justify-content: center
+
+@media (max-width: 450px)
+  .cardWrapper
+    text-align: center
+    height: 250px

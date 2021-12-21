@@ -1,0 +1,31 @@
+@import "src/styles/vars"
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  font-size: 15px
+
+.wrapper
+  height: calc(100vh - 50px)
+  width: 100vw
+  background-color: $color-dark-grey
+  display: flex
+  justify-content: center
+  font-family: 'Open Sans', sans-serif
+
+.content
+  width: 960px
+  padding: 20px
+  border-left: 1px solid lightblue
+  border-right: 1px solid lightblue
+  color: white
+
+h1, h2, h3, h4, h5, h6
+  color: $color-turquoise
+
+@media (max-width: 700px)
+  .content
+    width: 100%
